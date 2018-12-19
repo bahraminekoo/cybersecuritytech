@@ -1,0 +1,99 @@
+@mixin hide {
+  display: none !important;
+}
+
+.h-xs {
+  @include media-breakpoint-down(xs) {
+    @include hide;
+  }
+}
+
+.hide-mobile,
+.h-m {
+  @include media-mobile {
+    @include hide;
+  }
+}
+
+.hide-tablet,
+.h-t {
+  @include media-tablet {
+    @include hide;
+  }
+}
+
+.hide-desktop,
+.h-d {
+  @include media-desktop {
+    @include hide;
+  }
+}
+
+.hide-desktop-sm,
+.h-d-sm {
+  @include media-small-desktop {
+    @include hide;
+  }
+}
+
+.visible-xs-only,
+.v-xs-o {
+  @include media-breakpoint-up(sm) {
+    @include hide;
+  }
+}
+
+.visible-mobile-only,
+.v-m-o {
+  @include media-tablet {
+    @include hide;
+  }
+
+  @include media-desktop {
+    @include hide;
+  }
+}
+
+.visible-tablet-only,
+.v-t-o {
+  @include media-mobile {
+    @include hide;
+  }
+
+  @include media-desktop {
+    @include hide;
+  }
+}
+
+.visible-desktop-only,
+.v-d-o {
+  @include media-mobile {
+    @include hide;
+  }
+
+  @include media-tablet {
+    @include hide;
+  }
+}
+
+.visible-desktop-sm-only,
+.v-d-sm-o {
+  @include media-mobile {
+    @include hide;
+  }
+
+  @include media-tablet {
+    @include hide;
+  }
+
+  @include media-gt-small-desktop {
+    @include hide;
+  }
+}
+
+.visible-1200-only,
+.v-1200-o {
+  @media (max-width: 1200px) {
+    @include hide;
+  }
+}

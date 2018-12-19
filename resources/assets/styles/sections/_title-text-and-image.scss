@@ -1,0 +1,24 @@
+.section-title-text-and-image {
+  @include section();
+
+  .heading {
+    font-size: 1.555rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .text {
+    text-align: center;
+    max-width: 28rem;
+    margin: 1rem auto 2rem;
+  }
+
+  .o-image {
+    text-align: center;
+
+    @include media-desktop() {
+      margin: 2rem 0;
+    }
+  }
+}

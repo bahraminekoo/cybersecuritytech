@@ -1,0 +1,37 @@
+.section-cta {
+  @include section();
+
+  .heading {
+    font-size: 1.555rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .c-btn {
+    display: block;
+    text-align: center;
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 13rem;
+    color: #000;
+
+    // @include media-desktop() {
+    // }
+    &.c-btn--rounded {
+      border-radius: 4em;
+
+      // @include media-desktop() {
+      // }
+    }
+  }
+
+  /* Specific styling when .c-btn is an anchor element */
+  a.c-btn {
+    outline: 0;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,126 @@
+.section-testimonials {
+  @include section();
+
+  padding: 7rem 15rem;
+
+  .content {
+    min-height: 11.11rem;
+  }
+
+  .client-slides {
+    padding: 0;
+    height: 100%;
+
+    .slick-dots {
+      top: 13rem;
+      left: -3.5rem;
+    }
+
+    .slide {
+      width: 80%;
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: space-between;
+
+      .image {
+        max-width: 15rem;
+        max-height: 15rem;
+        border-radius: 50%;
+        margin-left: 2.5rem;
+      }
+
+      .text {
+        height: 100%;
+        display: flex;
+        font-size: 1rem;
+        text-align: left;
+        padding-left: 5%;
+        margin-top: 3%;
+        flex-direction: column;
+
+        span {
+          margin-bottom: 0.6rem;
+        }
+
+        .name {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 992px) {
+    padding: 7rem 0 !important;
+
+    .client-slides {
+      .slick-dots {
+        left: -0.5rem;
+      }
+
+      .slide {
+        width: 70% !important;
+        margin-left: 15%;
+
+        .image {
+          border-radius: 50%;
+          max-width: 12rem;
+          max-height: 12rem;
+          margin-left: 2.5rem;
+        }
+
+        .text {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 610px) {
+    .client-slides {
+      .slick-dots {
+        top: 18rem;
+        left: -1rem;
+      }
+
+      .slide {
+        width: 80% !important;
+        margin-left: 10%;
+
+        .image {
+          margin-left: 0;
+          margin-top: 0;
+          max-width: 10rem;
+          max-height: 10rem;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 519px) {
+    .client-slides {
+      .slide {
+        .image {
+          margin-left: 0;
+          margin-top: 9%;
+          max-width: 7rem;
+          max-height: 7rem;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 402px) {
+    padding: 7rem 0 !important;
+
+    .client-slides {
+      .slide {
+        .text {
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
+}
