@@ -161,6 +161,21 @@
             "button_label": "Add Row",
             "min": "",
             "max": ""
+        },
+        {
+            "key": "field_5c1afd46f0b16",
+            "label": "Background color",
+            "name": "background_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": ""
         }
     ],
     "location": [
@@ -168,7 +183,7 @@
             {
                 "param": "post_type",
                 "operator": "==",
-                "value": "views\/page-how-it-works.blade.php"
+                "value": "post"
             }
         ]
     ],
@@ -180,5 +195,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1545196918
+    "modified": 1545272668
 }

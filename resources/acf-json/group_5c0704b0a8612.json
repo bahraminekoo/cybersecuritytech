@@ -139,6 +139,37 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_5c1af84e98891": {
+                    "key": "layout_5c1af84e98891",
+                    "name": "title_blocks_and_link",
+                    "label": "Title,Blocks and Link",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5c1af88d98892",
+                            "label": "Section: Title, Blocks and Link",
+                            "name": "section:_title_blocks_and_link",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "clone": [
+                                "group_5c1af685340b0"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Section",
@@ -172,5 +203,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1545196797
+    "modified": 1545271595
 }
